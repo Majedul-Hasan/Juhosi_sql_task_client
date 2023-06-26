@@ -3,6 +3,7 @@ import MainLayout from '../pages/shared/MainLayout';
 import HomePage from '../pages/HomePage';
 import Login from '../pages/Login';
 import PrivateRoute from './PrivateRoute';
+import AdminPage from '../pages/AdminPage';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <HomePage />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: '/admin',
+        element: (
+          <PrivateRoute>
+            <AdminPage />
           </PrivateRoute>
         ),
       },
