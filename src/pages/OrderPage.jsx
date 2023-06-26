@@ -1,8 +1,7 @@
 import axios from 'axios';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
-import service from '../assets/Customer Service_Two Color.png';
+
 import { useForm } from 'react-hook-form';
-import { useState } from 'react';
+
 
 const OrderPage = () => {
   const {

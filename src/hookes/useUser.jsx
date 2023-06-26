@@ -27,7 +27,7 @@ const useUser = () => {
     }
   }, [token]);
 
-  return { loading, user };
+  return { loading, user, setUser };
 };
 
 export default useUser;
